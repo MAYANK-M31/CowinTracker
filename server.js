@@ -135,5 +135,5 @@ schedule.scheduleJob('1 * * * * *', async () => {
     await VaccineFinder()
 })
 
-module.exports = app;
+
 module.exports.handler = serverless(app);
