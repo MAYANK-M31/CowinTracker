@@ -6,7 +6,6 @@ const port = process.env.PORT || 3000
 const schedule = require("node-schedule")
 const axios = require("axios")
 // const cors = require("cors")
-const serverless = require('serverless-http');
 
 // MIDDLEWARE
 // app.use(cors())
@@ -136,4 +135,3 @@ schedule.scheduleJob('1 * * * * *', async () => {
 })
 
 
-module.exports.handler = serverless(app);
